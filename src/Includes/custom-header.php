@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package brisko
+ * @package simplecolor
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses brisko_header_style()
+ * @uses simplecolor_header_style()
  */
-function brisko_custom_header_setup() {
+function simplecolor_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'brisko_custom_header_args',
+			'simplecolor_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1200,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'brisko_header_style',
+				'wp-head-callback'   => 'simplecolor_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'brisko_custom_header_setup' );
+add_action( 'after_setup_theme', 'simplecolor_custom_header_setup' );
 
-if ( ! function_exists( 'brisko_header_style' ) ) :
+if ( ! function_exists( 'simplecolor_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see brisko_custom_header_setup().
+	 * @see simplecolor_custom_header_setup().
 	 */
-	function brisko_header_style() {
+	function simplecolor_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

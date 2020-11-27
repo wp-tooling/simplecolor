@@ -1,16 +1,16 @@
 <?php
 
-namespace Brisko;
+namespace Simplecolor;
 
-use Brisko\View\IndexPage;
-use Brisko\View\Sidebar;
-use Brisko\View\Archive;
-use Brisko\View\Single;
-use Brisko\View\Page404;
-use Brisko\View\Page;
-use Brisko\View\FullWidthPage;
-use Brisko\View\CanvasPage;
-use Brisko\View\Search;
+use Simplecolor\View\IndexPage;
+use Simplecolor\View\Sidebar;
+use Simplecolor\View\Archive;
+use Simplecolor\View\Single;
+use Simplecolor\View\Page404;
+use Simplecolor\View\Page;
+use Simplecolor\View\FullWidthPage;
+use Simplecolor\View\CanvasPage;
+use Simplecolor\View\Search;
 
 final class Template
 {
@@ -51,7 +51,7 @@ final class Template
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
-	 * @package brisko
+	 * @package simplecolor
 	 */
 	public function index() {
 		get_header();
@@ -64,7 +64,7 @@ final class Template
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
 	 *
-	 * @package brisko
+	 * @package simplecolor
 	 */
 	public function sidebar() {
 		Sidebar::view();
@@ -75,7 +75,7 @@ final class Template
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
-	 * @package brisko
+	 * @package simplecolor
 	 */
 	public function archive() {
 		get_header();
@@ -88,7 +88,7 @@ final class Template
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
 	 *
-	 * @package brisko
+	 * @package simplecolor
 	 */
 	public function single() {
 		get_header();
@@ -101,7 +101,7 @@ final class Template
 	 *
 	 * @link https://codex.wordpress.org/Creating_an_Error_404_Page
 	 *
-	 * @package brisko
+	 * @package simplecolor
 	 */
 	public function page_404() {
 		get_header();
@@ -119,7 +119,7 @@ final class Template
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
-	 * @package brisko
+	 * @package simplecolor
 	 */
 	public function page() {
 		get_header();
@@ -128,7 +128,7 @@ final class Template
 	}
 
 	/**
-	 * Brisko Canvas
+	 * Simplecolor Canvas
 	 *
 	 * @return void
 	 */
@@ -154,7 +154,7 @@ final class Template
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
 	 *
-	 * @package brisko
+	 * @package simplecolor
 	 */
 	public function search() {
 		get_header();

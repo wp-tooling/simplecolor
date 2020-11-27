@@ -1,18 +1,18 @@
 <?php
 
-namespace Brisko\Customize\Settings;
+namespace Simplecolor\Customize\Settings;
 
-use Brisko\Customize\Controls\Control;
-use Brisko\Customize\Controls\SeparatorControl;
+use Simplecolor\Customize\Controls\Control;
+use Simplecolor\Customize\Controls\SeparatorControl;
 
 class General
 {
 	/**
-	 * Brisko Section
+	 * Simplecolor Section
 	 *
 	 * @var $section
 	 */
-	public static $section = 'brisko_section_general';
+	public static $section = 'simplecolor_section_general';
 
 	/**
 	 * Customizer transport
@@ -31,7 +31,7 @@ class General
 	public static function settings( $wp_customize ) {
 
 		// Separator General Settings.
-		( new Control() )->separator( $wp_customize, esc_html__( 'General', 'brisko' ), self::$section );
+		( new Control() )->separator( $wp_customize, esc_html__( 'General', 'simplecolor' ), self::$section );
 
 		/**
 		 * Link Color
@@ -49,8 +49,8 @@ class General
 			new \WP_Customize_Color_Control(
 				$wp_customize, 'link_color',
 				array(
-					'label'       => esc_html__( 'Link Color', 'brisko' ),
-					'description' => esc_html__( 'Select a color', 'brisko' ),
+					'label'       => esc_html__( 'Link Color', 'simplecolor' ),
+					'description' => esc_html__( 'Select a color', 'simplecolor' ),
 					'section'     => self::$section,
 				)
 			)
@@ -59,7 +59,7 @@ class General
 		/**
 		 * Disable Sidebar
 		 */
-		( new Control() )->header_title( $wp_customize, esc_html__( 'Sidebar', 'brisko' ), self::$section );
+		( new Control() )->header_title( $wp_customize, esc_html__( 'Sidebar', 'simplecolor' ), self::$section );
 		$wp_customize->add_setting(
 			'disable_sidebar', array(
 				'default'           => absint( 0 ),
@@ -71,7 +71,7 @@ class General
 
 		$wp_customize->add_control(
 			'disable_sidebar', array(
-				'label'   => esc_html__( 'Disable Sidebar', 'brisko' ),
+				'label'   => esc_html__( 'Disable Sidebar', 'simplecolor' ),
 				'section' => self::$section,
 				'type'    => 'checkbox',
 			)

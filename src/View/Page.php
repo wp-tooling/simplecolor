@@ -1,8 +1,8 @@
 <?php
 
-namespace Brisko\View;
+namespace Simplecolor\View;
 
-use Brisko\Theme;
+use Simplecolor\Theme;
 
 class Page extends Layout
 {
@@ -32,7 +32,7 @@ class Page extends Layout
 	 * Head section
 	 */
 	public static function head() {
-		brisko_page_header(); ?>
+		simplecolor_page_header(); ?>
 		<main id="primary" class="site-main <?php Theme::options()->page_width(); ?> bg-white">
 		<?php
 	}
@@ -44,6 +44,6 @@ class Page extends Layout
 		?>
 			</main><!-- #main -->
 		<?php
-		brisko_page_footer();
+		simplecolor_page_footer();
 	}
 }

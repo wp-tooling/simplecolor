@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko\View;
+namespace Simplecolor\View;
 
 /**
  *

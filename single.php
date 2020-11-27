@@ -1,6 +1,6 @@
 <?php
 
-	use Brisko\Theme;
+	use Simplecolor\Theme;
 
 	/**
 	 * Single template

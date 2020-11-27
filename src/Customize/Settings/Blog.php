@@ -1,18 +1,18 @@
 <?php
 
-namespace Brisko\Customize\Settings;
+namespace Simplecolor\Customize\Settings;
 
-use Brisko\Customize\Controls\Control;
-use Brisko\Customize\Controls\SeparatorControl;
+use Simplecolor\Customize\Controls\Control;
+use Simplecolor\Customize\Controls\SeparatorControl;
 
 class Blog
 {
 	/**
-	 * Brisko Section
+	 * Simplecolor Section
 	 *
 	 * @var $section
 	 */
-	public static $section = 'brisko_section_blog';
+	public static $section = 'simplecolor_section_blog';
 
 	/**
 	 * Customizer transport
@@ -33,13 +33,13 @@ class Blog
 		/**
 		 * Archives Template Details
 		 */
-		( new Control() )->separator( $wp_customize, esc_html__( 'Blog', 'brisko' ), self::$section );
+		( new Control() )->separator( $wp_customize, esc_html__( 'Blog', 'simplecolor' ), self::$section );
 
 		// Blog Title .
 		// Blog Layout .
 
 		// Read More Button .
-		( new Control() )->header_title( $wp_customize, esc_html__( 'Read More Button', 'brisko' ) );
+		( new Control() )->header_title( $wp_customize, esc_html__( 'Read More Button', 'simplecolor' ) );
 
 		// button border radius.
 		$wp_customize->add_setting(
@@ -53,7 +53,7 @@ class Blog
 
 		$wp_customize->add_control(
 			'read_more_border_radius', array(
-				'label'   => esc_html__( 'Border Radius', 'brisko' ),
+				'label'   => esc_html__( 'Border Radius', 'simplecolor' ),
 				'section' => self::$section,
 				'type'    => 'checkbox',
 			)

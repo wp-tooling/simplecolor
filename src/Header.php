@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko;
+namespace Simplecolor;
 
 final class Header
 {
@@ -28,8 +28,8 @@ final class Header
 	 *  Constructor
 	 */
 	private function __construct() {
-		add_action( 'wp_head', array( $this, 'brisko_pingback_header' ) );
-		add_filter( 'body_class', array( $this, 'brisko_body_classes' ) );
+		add_action( 'wp_head', array( $this, 'simplecolor_pingback_header' ) );
+		add_filter( 'body_class', array( $this, 'simplecolor_body_classes' ) );
 	}
 
 	/**
@@ -38,7 +38,7 @@ final class Header
 	 * @param array $classes Classes for the body element.
 	 * @return array
 	 */
-	public function brisko_body_classes( $classes ) {
+	public function simplecolor_body_classes( $classes ) {
 		// Adds a class of hfeed to non-singular pages.
 		if ( ! is_singular() ) {
 			$classes[] = 'hfeed';
@@ -54,7 +54,7 @@ final class Header
 	/**
 	 * Add a pingback url auto-discovery header for single posts, pages, or attachments.
 	 */
-	public function brisko_pingback_header() {
+	public function simplecolor_pingback_header() {
 		if ( is_singular() && pings_open() ) {
 			printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
 		}
@@ -76,9 +76,9 @@ final class Header
 		}
 
 		?>
-			<div class="<?php Theme::options()->header_image_width(); ?> brisko-header-img <?php Theme::options()->header_image_display(); ?>" style="padding:0px">
+			<div class="<?php Theme::options()->header_image_width(); ?> simplecolor-header-img <?php Theme::options()->header_image_display(); ?>" style="padding:0px">
 				<?php
-					the_header_image_tag( array( 'class' => 'brisko-header-img' ) );
+					the_header_image_tag( array( 'class' => 'simplecolor-header-img' ) );
 				?>
 			</div>
 		<?php

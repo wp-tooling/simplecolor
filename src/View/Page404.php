@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko\View;
+namespace Simplecolor\View;
 
 /**
  *
@@ -19,7 +19,7 @@ class Page404 extends Layout
 		<header class="page-header">
 			<h1 class="page-title archive-title entry-meta">
 				<?php
-					esc_html_e( 'Oops! That page can&rsquo;t be found.', 'brisko' );
+					esc_html_e( 'Oops! That page can&rsquo;t be found.', 'simplecolor' );
 						?>
 				</h1>
 			</header><!-- .page-header -->
@@ -29,7 +29,7 @@ class Page404 extends Layout
 		/**
 		 * Page content
 		 */
-		esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'brisko' );
+		esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'simplecolor' );
 
 		get_search_form();
  		//the_widget( 'WP_Widget_Recent_Posts' );
@@ -37,7 +37,7 @@ class Page404 extends Layout
 			?>
 						<br/>
 					<div class="widget widget_categories">
- 					<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'brisko' ); ?></h2>
+ 					<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'simplecolor' ); ?></h2>
  						<ul><?php
  							wp_list_categories(
  								array(
@@ -53,8 +53,8 @@ class Page404 extends Layout
  		<?php
 
 		/* translators: %1$s: smiley */
- 		$brisko_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'brisko' ), convert_smilies( ':)' ) ) . '</p>';
- 		the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$brisko_archive_content" );
+ 		$simplecolor_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'simplecolor' ), convert_smilies( ':)' ) ) . '</p>';
+ 		the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$simplecolor_archive_content" );
  		the_widget( 'WP_Widget_Tag_Cloud' );
 
 		self::footer();

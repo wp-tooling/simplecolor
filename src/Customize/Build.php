@@ -1,14 +1,14 @@
 <?php
-namespace Brisko\Customize;
+namespace Simplecolor\Customize;
 
-use Brisko\Customize\Settings\General;
-use Brisko\Customize\Settings\Header;
-use Brisko\Customize\Settings\Navigation;
-use Brisko\Customize\Settings\Pages;
-use Brisko\Customize\Settings\Blog;
-use Brisko\Customize\Settings\Posts;
-use Brisko\Customize\Settings\Footer;
-use Brisko\Customize\Settings\SelectiveRefresh;
+use Simplecolor\Customize\Settings\General;
+use Simplecolor\Customize\Settings\Header;
+use Simplecolor\Customize\Settings\Navigation;
+use Simplecolor\Customize\Settings\Pages;
+use Simplecolor\Customize\Settings\Blog;
+use Simplecolor\Customize\Settings\Posts;
+use Simplecolor\Customize\Settings\Footer;
+use Simplecolor\Customize\Settings\SelectiveRefresh;
 
 final class Build {
 

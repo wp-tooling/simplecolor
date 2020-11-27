@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko\View;
+namespace Simplecolor\View;
 
 class Single extends Layout
 {
@@ -12,7 +12,7 @@ class Single extends Layout
 
 		self::head();
 
-		brisko_post_header();
+		simplecolor_post_header();
 
 		/**
 		 * Post content
@@ -22,20 +22,20 @@ class Single extends Layout
 			get_template_part( 'template-parts/content', get_post_type() );
 
 			// custom action .
-			brisko_after_post_content();
+			simplecolor_after_post_content();
 
 			// the_post_navigation.
 			if ( get_theme_mod( 'display_previous_next', 1 ) ) {
 				self::post_navigation();
 			}
 
-			do_action( 'brisko_before_comments' );
+			do_action( 'simplecolor_before_comments' );
 
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
 
-			do_action( 'brisko_after_comments' );
+			do_action( 'simplecolor_after_comments' );
 
 		endwhile;
 
@@ -48,8 +48,8 @@ class Single extends Layout
 	public static function post_navigation() {
 		the_post_navigation(
 			array(
-				'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'brisko' ) . '</span> <h5 class="nav-title">%title</h5>',
-				'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'brisko' ) . '</span> <h5 class="nav-title">%title</h5>',
+				'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'simplecolor' ) . '</span> <h5 class="nav-title">%title</h5>',
+				'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'simplecolor' ) . '</span> <h5 class="nav-title">%title</h5>',
 			)
 		);
 	}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko\View;
+namespace Simplecolor\View;
 
 /**
  *
@@ -35,7 +35,7 @@ class CanvasPage extends Layout
 	 * @return [type] [description]
 	 */
 	public static function head() {
-		brisko_page_header(); ?>
+		simplecolor_page_header(); ?>
 		<main id="primary" class="full-width-template bg-white">
 		<?php
 	}
@@ -45,6 +45,6 @@ class CanvasPage extends Layout
 	 */
 	public static function footer(){ ?>
 			</main><!-- #main -->
-		<?php brisko_page_footer();
+		<?php simplecolor_page_footer();
 	}
 }

@@ -6,21 +6,21 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package brisko
+ * @package simplecolor
  */
 
 ?>
-<?php brisko_before_footer(); ?>
+<?php simplecolor_before_footer(); ?>
 <footer id="colophon" class="site-footer this-site-footer bg-white this-margin-top">
-	<?php brisko_footer(); ?>
+	<?php simplecolor_footer(); ?>
 		<div align="center" class="site-info container">
-		<div class="brisko-theme-credit">
-			<?php do_action( 'brisko_footer_credit' ); ?>
-			</div><!-- .brisko-theme-credit -->
+		<div class="simplecolor-theme-credit">
+			<?php do_action( 'simplecolor_footer_credit' ); ?>
+			</div><!-- .simplecolor-theme-credit -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 	<?php wp_footer(); ?>
-		<?php brisko_after_footer(); ?>
+		<?php simplecolor_after_footer(); ?>
 	</body>
 </html>

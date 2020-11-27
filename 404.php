@@ -1,6 +1,6 @@
 <?php
 
-  	use Brisko\Theme;
+  	use Simplecolor\Theme;
 
   	/**
   	 * 404 pages template

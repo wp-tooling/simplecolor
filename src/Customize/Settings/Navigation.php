@@ -1,18 +1,18 @@
 <?php
 
-namespace Brisko\Customize\Settings;
+namespace Simplecolor\Customize\Settings;
 
-use Brisko\Customize\Controls\Control;
-use Brisko\Customize\Controls\SeparatorControl;
+use Simplecolor\Customize\Controls\Control;
+use Simplecolor\Customize\Controls\SeparatorControl;
 
 class Navigation
 {
 	/**
-	 * Brisko Section
+	 * Simplecolor Section
 	 *
 	 * @var $section
 	 */
-	public static $section = 'brisko_section_navigation';
+	public static $section = 'simplecolor_section_navigation';
 
 	/**
 	 * Customizer transport
@@ -31,7 +31,7 @@ class Navigation
 	public static function settings( $wp_customize ) {
 
 		// Separator Header Navigation Settings.
-		( new Control() )->separator( $wp_customize, esc_html__( 'Navigation', 'brisko' ), self::$section );
+		( new Control() )->separator( $wp_customize, esc_html__( 'Navigation', 'simplecolor' ), self::$section );
 
 		$wp_customize->add_setting(
 			'navigation_width', array(
@@ -42,13 +42,13 @@ class Navigation
 
 		$wp_customize->add_control(
 			'navigation_width', array(
-				'label'       => esc_html__( 'Navigation width', 'brisko' ),
-				'description' => esc_html__( 'set menu navigation width', 'brisko' ),
+				'label'       => esc_html__( 'Navigation width', 'simplecolor' ),
+				'description' => esc_html__( 'set menu navigation width', 'simplecolor' ),
 				'section'     => self::$section,
 				'type'        => 'select',
 				'choices'     => array(
-					'container'       => esc_html__( 'Boxed', 'brisko' ),
-					'container-fluid' => esc_html__( 'Full width', 'brisko' ),
+					'container'       => esc_html__( 'Boxed', 'simplecolor' ),
+					'container-fluid' => esc_html__( 'Full width', 'simplecolor' ),
 				),
 			)
 		);

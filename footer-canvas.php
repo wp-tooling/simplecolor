@@ -6,14 +6,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package brisko
+ * @package simplecolor
  */
 
-	brisko_before_footer();
-	brisko_footer();
+	simplecolor_before_footer();
+	simplecolor_footer();
 	?>
 	</div><!-- #page -->
 		<?php wp_footer(); ?>
-		<?php brisko_after_footer(); ?>
+		<?php simplecolor_after_footer(); ?>
 	</body>
 </html>

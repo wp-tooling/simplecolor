@@ -1,18 +1,18 @@
 <?php
 
-namespace Brisko\Customize\Settings;
+namespace Simplecolor\Customize\Settings;
 
-use Brisko\Customize\Controls\Control;
-use Brisko\Customize\Controls\SeparatorControl;
+use Simplecolor\Customize\Controls\Control;
+use Simplecolor\Customize\Controls\SeparatorControl;
 
 class SelectiveRefresh
 {
 	/**
-	 * Brisko Section
+	 * Simplecolor Section
 	 *
 	 * @var $section
 	 */
-	public static $section = 'brisko_section_general';
+	public static $section = 'simplecolor_section_general';
 
 	/**
 	 * Customizer transport
@@ -51,8 +51,8 @@ class SelectiveRefresh
 			$wp_customize->selective_refresh->add_partial(
 				'footer_copyright',
 				array(
-					'selector'        => '.brisko-footer-copyright',
-					'render_callback' => 'brisko_customize_partial_copyright',
+					'selector'        => '.simplecolor-footer-copyright',
+					'render_callback' => 'simplecolor_customize_partial_copyright',
 				)
 			);
 
@@ -60,8 +60,8 @@ class SelectiveRefresh
 			$wp_customize->selective_refresh->add_partial(
 				'poweredby',
 				array(
-					'selector'        => '.brisko-footer-poweredby',
-					'render_callback' => 'brisko_customize_partial_poweredby',
+					'selector'        => '.simplecolor-footer-poweredby',
+					'render_callback' => 'simplecolor_customize_partial_poweredby',
 				)
 			);
 
@@ -70,7 +70,7 @@ class SelectiveRefresh
 				'featured_image',
 				array(
 					'selector'        => '.post-featured-image',
-					'render_callback' => 'brisko_customize_partial_featured_image',
+					'render_callback' => 'simplecolor_customize_partial_featured_image',
 				)
 			);
 
@@ -79,7 +79,7 @@ class SelectiveRefresh
 				'blogname',
 				array(
 					'selector'        => '.site-title a',
-					'render_callback' => 'brisko_customize_partial_blogname',
+					'render_callback' => 'simplecolor_customize_partial_blogname',
 				)
 			);
 			// blogdescription.
@@ -87,7 +87,7 @@ class SelectiveRefresh
 				'blogdescription',
 				array(
 					'selector'        => '.site-description',
-					'render_callback' => 'brisko_customize_partial_blogdescription',
+					'render_callback' => 'simplecolor_customize_partial_blogdescription',
 				)
 			);
 		}

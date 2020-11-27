@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko\Customize\Controls;
+namespace Simplecolor\Customize\Controls;
 
 /**
  * Class SeparatorControl

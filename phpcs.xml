@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Brisko Theme">
+<ruleset name="Simplecolor Theme">
 
 	<description>A custom set of rules to check for WordPress themes.</description>
 
@@ -29,7 +29,7 @@
 	 Multiple valid text domains can be provided as a comma-delimited list. -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="brisko" />
+			<property name="text_domain" type="array" value="simplecolor" />
 		</properties>
 	</rule>
 

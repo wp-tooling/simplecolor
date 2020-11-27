@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko\View;
+namespace Simplecolor\View;
 
 class FooterCredits
 {
@@ -38,7 +38,7 @@ class FooterCredits
 	public function copyright() {
 
 		if ( get_theme_mod( 'footer_copyright' ) !== false ) {
-			$copyright = '<span class="brisko-footer-copyright">' . esc_html( get_theme_mod( 'footer_copyright' ) ) . '</span>'; // @codingStandardsIgnoreLine
+			$copyright = '<span class="simplecolor-footer-copyright">' . esc_html( get_theme_mod( 'footer_copyright' ) ) . '</span>'; // @codingStandardsIgnoreLine
 		} else {
 			$copyright = get_bloginfo( 'name' );
 		}
@@ -46,16 +46,16 @@ class FooterCredits
 	}
 
 	/**
-	 * Brisko Theme credit powered by
+	 * Simplecolor Theme credit powered by
 	 *
 	 * @return string $poweredby
 	 */
 	public function poweredby() {
 
 		if ( get_theme_mod( 'poweredby' ) !== false ) {
-			$poweredby = '<span class="brisko-footer-poweredby">' . wp_kses_post( get_theme_mod( 'poweredby' ) ) . '</span>';
+			$poweredby = '<span class="simplecolor-footer-poweredby">' . wp_kses_post( get_theme_mod( 'poweredby' ) ) . '</span>';
 		} else {
-			$poweredby = ' | Powered by <a href="https://wpbrisko.com">Brisko WordPress Theme</a>';
+			$poweredby = ' | Powered by <a href="https://wpsimplecolor.com">Simplecolor WordPress Theme</a>';
 		}
 		return $poweredby;
 	}
@@ -66,7 +66,7 @@ class FooterCredits
 	 * @return void
 	 */
 	public function get_footer_credits() {
-		printf( esc_html__( '%1$s %2$s %3$s', 'brisko' ), wp_kses_post( $this->copyright() ), '   ', wp_kses_post( $this->poweredby() ) ); // @codingStandardsIgnoreLine
+		printf( esc_html__( '%1$s %2$s %3$s', 'simplecolor' ), wp_kses_post( $this->copyright() ), '   ', wp_kses_post( $this->poweredby() ) ); // @codingStandardsIgnoreLine
 	}
 
 }

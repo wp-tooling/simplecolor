@@ -1,13 +1,13 @@
 <?php
 	/**
-	 * Template Name: Brisko Canvas
+	 * Template Name: Simplecolor Canvas
 	 *
-	 * @package brisko
+	 * @package simplecolor
 	 */
 
-	use Brisko\Theme;
+	use Simplecolor\Theme;
 
  	/**
- 	 * Page Brisko Full Width
+ 	 * Page Simplecolor Full Width
  	 */
  	Theme::template()->canvas_page();

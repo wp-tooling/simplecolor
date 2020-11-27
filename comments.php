@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package brisko
+ * @package simplecolor
  */
 
 /*
@@ -26,18 +26,18 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$brisko_comment_count = get_comments_number();
-			if ( '1' === $brisko_comment_count ) {
+			$simplecolor_comment_count = get_comments_number();
+			if ( '1' === $simplecolor_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One Comment on &ldquo;%1$s&rdquo;', 'brisko' ),
+					esc_html__( 'One Comment on &ldquo;%1$s&rdquo;', 'simplecolor' ),
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			} else {
 				printf(
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s Comment on &ldquo;%2$s&rdquo;', '%1$s Comments on &ldquo;%2$s&rdquo;', $brisko_comment_count, 'comments title', 'brisko' ) ),
-					number_format_i18n( $brisko_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					esc_html( _nx( '%1$s Comment on &ldquo;%2$s&rdquo;', '%1$s Comments on &ldquo;%2$s&rdquo;', $simplecolor_comment_count, 'comments title', 'simplecolor' ) ),
+					number_format_i18n( $simplecolor_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			}
@@ -59,7 +59,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'brisko' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'simplecolor' ); ?></p>
 			<?php
 		endif;
 	endif; // Check for have_comments().

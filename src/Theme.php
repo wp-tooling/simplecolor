@@ -1,9 +1,9 @@
 <?php
 
-namespace Brisko;
+namespace Simplecolor;
 
-use Brisko\View\FooterCredits;
-use Brisko\Customize\Customizer;
+use Simplecolor\View\FooterCredits;
+use Simplecolor\Customize\Customizer;
 
 final class Theme
 {
@@ -40,7 +40,7 @@ final class Theme
 		Enqueue::init();
 		Header::init();
 		Customizer::init();
-		add_action( 'brisko_footer_credit', array( FooterCredits::class, 'init' ) );
+		add_action( 'simplecolor_footer_credit', array( FooterCredits::class, 'init' ) );
 	}
 
 	/**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko\View;
+namespace Simplecolor\View;
 
 /**
  *
@@ -15,7 +15,7 @@ class Archive extends Layout
 	public static function view(){
 		self::head();
 
-		brisko_post_header();
+		simplecolor_post_header();
 
 		/**
 		 * Post content

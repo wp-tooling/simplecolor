@@ -1,10 +1,10 @@
 <?php
 /**
- * Brisko functions and definitions
+ * Simplecolor functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package brisko
+ * @package simplecolor
  */
 
 	/**
@@ -22,4 +22,4 @@
 	/**
 	 * Load Theme
 	 */
-	Brisko\Theme::setup();
+	Simplecolor\Theme::setup();

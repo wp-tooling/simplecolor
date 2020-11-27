@@ -1,18 +1,18 @@
 <?php
 
-namespace Brisko\Customize\Settings;
+namespace Simplecolor\Customize\Settings;
 
-use Brisko\Customize\Controls\Control;
-use Brisko\Customize\Controls\SeparatorControl;
+use Simplecolor\Customize\Controls\Control;
+use Simplecolor\Customize\Controls\SeparatorControl;
 
 class Header
 {
 	/**
-	 * Brisko Section
+	 * Simplecolor Section
 	 *
 	 * @var $section
 	 */
-	public static $section = 'brisko_section_header';
+	public static $section = 'simplecolor_section_header';
 
 	/**
 	 * Customizer transport
@@ -31,7 +31,7 @@ class Header
 	public static function settings( $wp_customize ) {
 
 		// Separator Header Image Settings.
-		( new Control() )->separator( $wp_customize, esc_html__( 'Header Image', 'brisko' ), self::$section );
+		( new Control() )->separator( $wp_customize, esc_html__( 'Header Image', 'simplecolor' ), self::$section );
 		/**
 		 * Header Image
 		 */
@@ -44,14 +44,14 @@ class Header
 
 		$wp_customize->add_control(
 			'header_image_display', array(
-				'label'       => esc_html__( 'Header Image', 'brisko' ),
-				'description' => esc_html__( 'display settings for the header image', 'brisko' ),
+				'label'       => esc_html__( 'Header Image', 'simplecolor' ),
+				'description' => esc_html__( 'display settings for the header image', 'simplecolor' ),
 				'section'     => self::$section,
 				'type'        => 'select',
 				'choices'     => array(
-					'this-home-page-only' => esc_html__( 'Home Page / Front Page Only', 'brisko' ),
-					'this-entire-site'    => esc_html__( 'Entire Site', 'brisko' ),
-					'this-disabled'       => esc_html__( 'Disabled', 'brisko' ),
+					'this-home-page-only' => esc_html__( 'Home Page / Front Page Only', 'simplecolor' ),
+					'this-entire-site'    => esc_html__( 'Entire Site', 'simplecolor' ),
+					'this-disabled'       => esc_html__( 'Disabled', 'simplecolor' ),
 				),
 			)
 		);
@@ -66,13 +66,13 @@ class Header
 
 		$wp_customize->add_control(
 			'header_image_width', array(
-				'label'       => esc_html__( 'Header Image width', 'brisko' ),
-				'description' => esc_html__( 'set width for the header image', 'brisko' ),
+				'label'       => esc_html__( 'Header Image width', 'simplecolor' ),
+				'description' => esc_html__( 'set width for the header image', 'simplecolor' ),
 				'section'     => self::$section,
 				'type'        => 'select',
 				'choices'     => array(
-					'container'       => esc_html__( 'Boxed', 'brisko' ),
-					'container-fluid' => esc_html__( 'Full width', 'brisko' ),
+					'container'       => esc_html__( 'Boxed', 'simplecolor' ),
+					'container-fluid' => esc_html__( 'Full width', 'simplecolor' ),
 				),
 			)
 		);

@@ -1,18 +1,18 @@
 <?php
 
-namespace Brisko\Customize\Settings;
+namespace Simplecolor\Customize\Settings;
 
-use Brisko\Customize\Controls\Control;
-use Brisko\Customize\Controls\SeparatorControl;
+use Simplecolor\Customize\Controls\Control;
+use Simplecolor\Customize\Controls\SeparatorControl;
 
 class Footer
 {
 	/**
-	 * Brisko Section
+	 * Simplecolor Section
 	 *
 	 * @var $section
 	 */
-	public static $section = 'brisko_section_footer';
+	public static $section = 'simplecolor_section_footer';
 
 	/**
 	 * Customizer transport
@@ -33,7 +33,7 @@ class Footer
 		/**
 		 * Footer Settings
 		 */
-		( new Control() )->separator( $wp_customize, esc_html__( 'Footer', 'brisko' ), self::$section );
+		( new Control() )->separator( $wp_customize, esc_html__( 'Footer', 'simplecolor' ), self::$section );
 
 		// Copyright section .
 		$wp_customize->add_setting(
@@ -47,8 +47,8 @@ class Footer
 
 		$wp_customize->add_control(
 			'footer_copyright', array(
-				'label'       => esc_html__( 'Copyright Text', 'brisko' ),
-				'description' => esc_html__( 'edit footer section', 'brisko' ),
+				'label'       => esc_html__( 'Copyright Text', 'simplecolor' ),
+				'description' => esc_html__( 'edit footer section', 'simplecolor' ),
 				'section'     => self::$section,
 				'settings'    => 'footer_copyright',
 			)
@@ -57,7 +57,7 @@ class Footer
 		// Powered By.
 		$wp_customize->add_setting(
 			'poweredby', array(
-				'default'           => wp_kses_post( ' | Powered by <a href="https://wpbrisko.com">Brisko WordPress Theme</a>' ),
+				'default'           => wp_kses_post( ' | Powered by <a href="https://wpsimplecolor.com">Simplecolor WordPress Theme</a>' ),
 				'capability'        => 'edit_theme_options',
 				'transport'         => self::$transport,
 				'sanitize_callback' => 'wp_kses_post',
@@ -66,8 +66,8 @@ class Footer
 
 		$wp_customize->add_control(
 			'poweredby', array(
-				'label'       => esc_html__( 'Powered By', 'brisko' ),
-				'description' => esc_html__( 'edit Powered by section, html can be used', 'brisko' ),
+				'label'       => esc_html__( 'Powered By', 'simplecolor' ),
+				'description' => esc_html__( 'edit Powered by section, html can be used', 'simplecolor' ),
 				'section'     => self::$section,
 				'settings'    => 'poweredby',
 				'type'        => 'textarea',

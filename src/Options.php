@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko;
+namespace Simplecolor;
 
 final class Options
 {

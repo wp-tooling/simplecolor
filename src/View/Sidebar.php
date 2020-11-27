@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko\View;
+namespace Simplecolor\View;
 
 class Sidebar
 {
@@ -20,9 +20,9 @@ class Sidebar
 		/**
 		 * Sidebar
 		 */
-		brisko_before_sidebar();
+		simplecolor_before_sidebar();
 		dynamic_sidebar( 'sidebar-1' );
-		brisko_after_sidebar();
+		simplecolor_after_sidebar();
 
 				?>
 			</aside><!-- #secondary -->

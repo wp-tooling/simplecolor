@@ -4,22 +4,22 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package brisko
+ * @package simplecolor
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="page-header <?php echo esc_attr( Brisko\Theme::options()->display_page_header() ); ?>">
+	<header class="page-header <?php echo esc_attr( Simplecolor\Theme::options()->display_page_header() ); ?>">
 		<?php the_title( '<h2 class="page-title archive-title entry-meta">', '</h2>' ); ?>
 	</header><!-- .entry-header -->
-	<?php brisko_post_thumbnail(); ?>
+	<?php simplecolor_post_thumbnail(); ?>
 	<div class="entry-content">
 		<?php
 		the_content();
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'brisko' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'simplecolor' ),
 				'after'  => '</div>',
 			)
 		);
@@ -32,7 +32,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'brisko' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'simplecolor' ),
 						array(
 							'span' => array(
 								'class' => array(),

@@ -1,6 +1,6 @@
 <?php
 
-namespace Brisko;
+namespace Simplecolor;
 
 final class Activate
 {
@@ -28,9 +28,9 @@ final class Activate
 	 * Theme Setup
 	 */
 	private function __construct() {
-		add_action( 'after_setup_theme', array( $this, 'brisko_setup' ) );
-		add_action( 'after_setup_theme', array( $this, 'brisko_content_width' ), 0 );
-		add_action( 'widgets_init', array( $this, 'brisko_widgets_init' ) );
+		add_action( 'after_setup_theme', array( $this, 'simplecolor_setup' ) );
+		add_action( 'after_setup_theme', array( $this, 'simplecolor_content_width' ), 0 );
+		add_action( 'widgets_init', array( $this, 'simplecolor_widgets_init' ) );
 	}
 
 		/**
@@ -40,11 +40,11 @@ final class Activate
 		 * runs before the init hook. The init hook is too late for some features, such
 		 * as indicating support for post thumbnails.
 		 */
-		public function brisko_setup() {
+		public function simplecolor_setup() {
 			/*
 			 * Make theme available for translation.
 			 */
-			load_theme_textdomain( 'brisko' );
+			load_theme_textdomain( 'simplecolor' );
 
 			// Add default posts and comments RSS feed links to head.
 			add_theme_support( 'automatic-feed-links' );
@@ -67,7 +67,7 @@ final class Activate
 			// This theme uses wp_nav_menu() in one location.
 			register_nav_menus(
 				array(
-					'menu-1' => esc_html__( 'Primary', 'brisko' ),
+					'menu-1' => esc_html__( 'Primary', 'simplecolor' ),
 				)
 			);
 
@@ -92,7 +92,7 @@ final class Activate
 			add_theme_support(
 				'custom-background',
 				apply_filters(
-					'brisko_custom_background_args',
+					'simplecolor_custom_background_args',
 					array(
 						'default-color' => 'ffffff',
 						'default-image' => '',
@@ -127,11 +127,11 @@ final class Activate
 	 *
 	 * @global int $content_width
 	 */
-	public function brisko_content_width() {
+	public function simplecolor_content_width() {
 		// This variable is intended to be overruled from themes.
 		// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 		// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-		$GLOBALS['content_width'] = apply_filters( 'brisko_content_width', 640 );
+		$GLOBALS['content_width'] = apply_filters( 'simplecolor_content_width', 640 );
 	}
 
 	/**
@@ -139,12 +139,12 @@ final class Activate
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
 	 */
-	public function brisko_widgets_init() {
+	public function simplecolor_widgets_init() {
 		register_sidebar(
 			array(
-				'name'          => esc_html__( 'Sidebar', 'brisko' ),
+				'name'          => esc_html__( 'Sidebar', 'simplecolor' ),
 				'id'            => 'sidebar-1',
-				'description'   => esc_html__( 'Add widgets here.', 'brisko' ),
+				'description'   => esc_html__( 'Add widgets here.', 'simplecolor' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',

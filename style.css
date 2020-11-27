@@ -1,24 +1,24 @@
 /*!
-Theme Name: 	Brisko
+Theme Name: 	Simplecolor
 Author: 		devuri
-Description: 	Brisko is a beautifully simple responsive and lightweight WordPress theme that is fast and optimized for WordPress page builders, you can use it as a foundation to build versatile layouts using modern page builders like Elementor, Gutenberg, Beaver Builder, Brizy, SiteOrigin etc. this theme is suitable for personal blogs, business, agency, restaurant, simple blog, life coach, portfolio, charity, and more. Brisko can be extended with plugins or child themes using any of the many included actions.
+Description: 	Simplecolor is a beautifully simple responsive and lightweight WordPress theme that is fast and optimized for WordPress page builders, you can use it as a foundation to build versatile layouts using modern page builders like Elementor, Gutenberg, Beaver Builder, Brizy, SiteOrigin etc. this theme is suitable for personal blogs, business, agency, restaurant, simple blog, life coach, portfolio, charity, and more. Simplecolor can be extended with plugins or child themes using any of the many included actions.
 Version: 		0.7.4
 Tested up to:   5.4
 Requires PHP:   5.6
-Text Domain: 	brisko
+Text Domain: 	simplecolor
 Tags: 			custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-Author URI: 	https://wpbrisko.com
-Theme URI: 		https://demo.wpbrisko.com
+Author URI: 	https://wpsimplecolor.com
+Theme URI: 		https://demo.wpsimplecolor.com
 License:		GNU General Public License v2 or later
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 
-Brisko WordPress Theme, Copyright 2020 Uriel Wilson.
-Brisko is distributed under the terms of the GNU GPL.
+Simplecolor WordPress Theme, Copyright 2020 Uriel Wilson.
+Simplecolor is distributed under the terms of the GNU GPL.
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
 
-Brisko is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Simplecolor is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -103,7 +103,7 @@ pre {
 # Header
 --------------------------------------------------------------*/
 
-.brisko-header-img {
+.simplecolor-header-img {
 	margin-bottom: 0;
 	width: 100%;
 }
@@ -161,7 +161,7 @@ pre {
     font-weight: 800;
 }
 
-div.brisko-navigation {
+div.simplecolor-navigation {
 	/* margin-bottom: 0.2em; */
 	/* box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075); */
 	/* border-top: 1px solid #f0f0f0;

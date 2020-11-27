@@ -33,7 +33,7 @@
   // footer copyright text
   wp.customize( 'footer_copyright', function( value ) {
     value.bind( function( to ) {
-      $( '.brisko-footer-copyright' ).text( to );
+      $( '.simplecolor-footer-copyright' ).text( to );
     } );
   } );
 
@@ -73,7 +73,7 @@
   // footer poweredby
   wp.customize( 'poweredby', function( value ) {
     value.bind( function( to ) {
-      $( '.brisko-footer-poweredby' ).html( to );
+      $( '.simplecolor-footer-poweredby' ).html( to );
     } );
   } );
 

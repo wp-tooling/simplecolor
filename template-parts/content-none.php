@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package brisko
+ * @package simplecolor
  */
 
 ?>
@@ -12,7 +12,7 @@
 <div class="col-md-8 primary-content">
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title archive-title entry-meta"><?php esc_html_e( 'Nothing Found', 'brisko' ); ?></h1>
+		<h1 class="page-title archive-title entry-meta"><?php esc_html_e( 'Nothing Found', 'simplecolor' ); ?></h1>
 	</header><!-- .page-header -->
 	<div class="page-content">
 		<?php
@@ -20,7 +20,7 @@
 			printf(
 				'<p>' . wp_kses(
 					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'brisko' ),
+					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'simplecolor' ),
 					array(
 						'a' => array(
 							'href' => array(),
@@ -31,12 +31,12 @@
 			);
 		elseif ( is_search() ) :
 			?>
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'brisko' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'simplecolor' ); ?></p>
 			<?php
 			get_search_form();
 		else :
 			?>
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'brisko' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'simplecolor' ); ?></p>
 			<?php
 			get_search_form();
 		endif;

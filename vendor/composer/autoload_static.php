@@ -14,41 +14,41 @@ class ComposerStaticInit65277b3585d1b2ae053b06fa818d4810
     );
 
     public static $prefixLengthsPsr4 = array (
-        'B' => 
+        'B' =>
         array (
-            'Brisko\\' => 7,
+            'Simplecolor\\' => 7,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Brisko\\' => 
+        'Simplecolor\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static $classMap = array (
-        'Brisko\\Activate' => __DIR__ . '/../..' . '/src/Activate.php',
-        'Brisko\\Customize\\Controls\\Control' => __DIR__ . '/../..' . '/src/Customize/Controls/Control.php',
-        'Brisko\\Customize\\Controls\\HeaderControl' => __DIR__ . '/../..' . '/src/Customize/Controls/HeaderControl.php',
-        'Brisko\\Customize\\Controls\\SeparatorControl' => __DIR__ . '/../..' . '/src/Customize/Controls/SeparatorControl.php',
-        'Brisko\\Customize\\Customizer' => __DIR__ . '/../..' . '/src/Customize/Customizer.php',
-        'Brisko\\Enqueue' => __DIR__ . '/../..' . '/src/Enqueue.php',
-        'Brisko\\Header' => __DIR__ . '/../..' . '/src/Header.php',
-        'Brisko\\Options' => __DIR__ . '/../..' . '/src/Options.php',
-        'Brisko\\Template' => __DIR__ . '/../..' . '/src/Template.php',
-        'Brisko\\Theme' => __DIR__ . '/../..' . '/src/Theme.php',
-        'Brisko\\View\\Archive' => __DIR__ . '/../..' . '/src/View/Archive.php',
-        'Brisko\\View\\CanvasPage' => __DIR__ . '/../..' . '/src/View/CanvasPage.php',
-        'Brisko\\View\\FooterCredits' => __DIR__ . '/../..' . '/src/View/FooterCredits.php',
-        'Brisko\\View\\FullWidthPage' => __DIR__ . '/../..' . '/src/View/FullWidthPage.php',
-        'Brisko\\View\\IndexPage' => __DIR__ . '/../..' . '/src/View/IndexPage.php',
-        'Brisko\\View\\Layout' => __DIR__ . '/../..' . '/src/View/Layout.php',
-        'Brisko\\View\\Page' => __DIR__ . '/../..' . '/src/View/Page.php',
-        'Brisko\\View\\Page404' => __DIR__ . '/../..' . '/src/View/Page404.php',
-        'Brisko\\View\\Search' => __DIR__ . '/../..' . '/src/View/Search.php',
-        'Brisko\\View\\Sidebar' => __DIR__ . '/../..' . '/src/View/Sidebar.php',
-        'Brisko\\View\\Single' => __DIR__ . '/../..' . '/src/View/Single.php',
+        'Simplecolor\\Activate' => __DIR__ . '/../..' . '/src/Activate.php',
+        'Simplecolor\\Customize\\Controls\\Control' => __DIR__ . '/../..' . '/src/Customize/Controls/Control.php',
+        'Simplecolor\\Customize\\Controls\\HeaderControl' => __DIR__ . '/../..' . '/src/Customize/Controls/HeaderControl.php',
+        'Simplecolor\\Customize\\Controls\\SeparatorControl' => __DIR__ . '/../..' . '/src/Customize/Controls/SeparatorControl.php',
+        'Simplecolor\\Customize\\Customizer' => __DIR__ . '/../..' . '/src/Customize/Customizer.php',
+        'Simplecolor\\Enqueue' => __DIR__ . '/../..' . '/src/Enqueue.php',
+        'Simplecolor\\Header' => __DIR__ . '/../..' . '/src/Header.php',
+        'Simplecolor\\Options' => __DIR__ . '/../..' . '/src/Options.php',
+        'Simplecolor\\Template' => __DIR__ . '/../..' . '/src/Template.php',
+        'Simplecolor\\Theme' => __DIR__ . '/../..' . '/src/Theme.php',
+        'Simplecolor\\View\\Archive' => __DIR__ . '/../..' . '/src/View/Archive.php',
+        'Simplecolor\\View\\CanvasPage' => __DIR__ . '/../..' . '/src/View/CanvasPage.php',
+        'Simplecolor\\View\\FooterCredits' => __DIR__ . '/../..' . '/src/View/FooterCredits.php',
+        'Simplecolor\\View\\FullWidthPage' => __DIR__ . '/../..' . '/src/View/FullWidthPage.php',
+        'Simplecolor\\View\\IndexPage' => __DIR__ . '/../..' . '/src/View/IndexPage.php',
+        'Simplecolor\\View\\Layout' => __DIR__ . '/../..' . '/src/View/Layout.php',
+        'Simplecolor\\View\\Page' => __DIR__ . '/../..' . '/src/View/Page.php',
+        'Simplecolor\\View\\Page404' => __DIR__ . '/../..' . '/src/View/Page404.php',
+        'Simplecolor\\View\\Search' => __DIR__ . '/../..' . '/src/View/Search.php',
+        'Simplecolor\\View\\Sidebar' => __DIR__ . '/../..' . '/src/View/Sidebar.php',
+        'Simplecolor\\View\\Single' => __DIR__ . '/../..' . '/src/View/Single.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

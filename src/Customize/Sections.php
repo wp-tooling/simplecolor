@@ -1,5 +1,5 @@
 <?php
-namespace Brisko\Customize;
+namespace Simplecolor\Customize;
 
 final class Sections {
 

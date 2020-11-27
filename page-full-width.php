@@ -1,13 +1,13 @@
 <?php
 	/**
-	 * Template Name: Brisko Full Width
+	 * Template Name: Simplecolor Full Width
 	 *
-	 * @package brisko
+	 * @package simplecolor
 	 */
 
-	use Brisko\Theme;
+	use Simplecolor\Theme;
 
  	/**
- 	 * Page Brisko Full Width
+ 	 * Page Simplecolor Full Width
  	 */
  	Theme::template()->full_width_page();

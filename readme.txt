@@ -1,4 +1,4 @@
-=== Brisko ===
+=== Simplecolor ===
 Contributors: icelayer
 Tested up to: 5.5
 Version: 0.7.4
@@ -8,21 +8,21 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 == Description ==
 
-Brisko is a beautifully simple and lightweight WordPress theme that is optimized for speed and WordPress page builders like Elementor, you can use it as a foundation to build versatile layouts using Elementor Template Kits or the WordPress Block Patterns. This theme is suitable for personal blogs, business, agency, restaurant, simple blog, life coach, portfolio, charity, and more. Brisko can be extended with plugins or child themes using any of the many included actions, the color scheme can be easily customized to match Elementor Template Kits. The options are easy to manage using the live theme customizer.  Use the WordPress Customizer and Elementor page builder to create professional designs on a solid foundation. Check out our prebuilt website demos for inspiration. demo.wpbrisko.com
+Simplecolor is a beautifully simple and lightweight WordPress theme that is optimized for speed and WordPress page builders like Elementor, you can use it as a foundation to build versatile layouts using Elementor Template Kits or the WordPress Block Patterns. This theme is suitable for personal blogs, business, agency, restaurant, simple blog, life coach, portfolio, charity, and more. Simplecolor can be extended with plugins or child themes using any of the many included actions, the color scheme can be easily customized to match Elementor Template Kits. The options are easy to manage using the live theme customizer.  Use the WordPress Customizer and Elementor page builder to create professional designs on a solid foundation. Check out our prebuilt website demos for inspiration. demo.wpsimplecolor.com
 
-For more information about the Brisko Theme please go to https://wpbrisko.com.
+For more information about the Simplecolor Theme please go to https://wpsimplecolor.com.
 
 == Installation ==
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-2. Type in Brisko in the search form and press the 'Enter' key on your keyboard.
+2. Type in Simplecolor in the search form and press the 'Enter' key on your keyboard.
 3. Click on the 'Activate' button to use your new theme right away.
 4. Navigate to Appearance > Customize in your admin panel to customize this theme.
 
 == Copyright ==
 
-Brisko WordPress Theme, Copyright 2020 Uriel Wilson.
-Brisko is distributed under the terms of the GNU GPL.
+Simplecolor WordPress Theme, Copyright 2020 Uriel Wilson.
+Simplecolor is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -34,7 +34,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-Brisko bundles the following resources:
+Simplecolor bundles the following resources:
 
 Underscores, Copyright 2012-2020 Automattic, Inc.
 Licenses: GPL2
@@ -59,7 +59,7 @@ Source: https://github.com/gblazex/smoothscroll-for-websites
 * Fix Logo WPREVIEW #1 Adding a custom logo and removing it will make the text logo (and description) disappear.
 
 = 0.3.9 =
-* Add brisko_before_header action
+* Add simplecolor_before_header action
 * Fix description output
 
 = 0.4.2 =
@@ -67,10 +67,10 @@ Source: https://github.com/gblazex/smoothscroll-for-websites
 
 = 0.4.3 =
 * Add SmoothScroll for websites
-* Fix error brisko_before_entry_meta
+* Fix error simplecolor_before_entry_meta
 
 = 0.4.5 =
-* Fix error brisko_after_entry_meta
+* Fix error simplecolor_after_entry_meta
 
 = 0.4.7 =
 * Fix 404 add sidebar
@@ -95,7 +95,7 @@ Source: https://github.com/gblazex/smoothscroll-for-websites
 * Add: Custom Inline Theme styles.
 * Add: Link Color Option.
 * Add: Featured Image Display Option.
-* New: brisko_theme_mod().
+* New: simplecolor_theme_mod().
 * Fix: Page header title style.
 * Fix: Remove h1,h2,h3,h4,h5,h6 font-family style.
 * Fix: more-link class Add border-radius.
@@ -115,7 +115,7 @@ Source: https://github.com/gblazex/smoothscroll-for-websites
 * Add Composer
 * Fix full width page layout
 * Fix Customizer setting Powered by live preview
-* Add 'brisko_before_comments' and 'brisko_after_comments'
+* Add 'simplecolor_before_comments' and 'simplecolor_after_comments'
 * Add PHPCS
 
 = 0.7.2 =

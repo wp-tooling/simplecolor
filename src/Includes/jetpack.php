@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package brisko
+ * @package simplecolor
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function brisko_jetpack_setup() {
+function simplecolor_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'brisko_infinite_scroll_render',
+			'render'    => 'simplecolor_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function brisko_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'brisko-style',
+				'stylesheet' => 'simplecolor-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,12 +48,12 @@ function brisko_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'brisko_jetpack_setup' );
+add_action( 'after_setup_theme', 'simplecolor_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function brisko_infinite_scroll_render() {
+function simplecolor_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

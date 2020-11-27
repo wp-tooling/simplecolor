@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package brisko
+ * @package simplecolor
  */
 
 ?><!DOCTYPE html>
@@ -18,15 +18,15 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'brisko-font brisko-font-style' ); ?>>
+<body <?php body_class( 'simplecolor-font simplecolor-font-style' ); ?>>
 <?php wp_body_open(); ?>
-<?php brisko_header_image(); ?>
+<?php simplecolor_header_image(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary">
-		<?php esc_html_e( 'Skip to content', 'brisko' ); ?>
+		<?php esc_html_e( 'Skip to content', 'simplecolor' ); ?>
 	</a>
-<?php brisko_before_header(); ?>
-<?php brisko_after_header(); ?>
+<?php simplecolor_before_header(); ?>
+<?php simplecolor_after_header(); ?>
 <?php if ( is_front_page() && is_home() ) :
-	brisko_homepage_header();
+	simplecolor_homepage_header();
 endif; ?>

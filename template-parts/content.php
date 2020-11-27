@@ -4,12 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package brisko
+ * @package simplecolor
  */
 
 ?>
 <div class="post-article">
-	<?php brisko_post_thumbnail(); ?>
+	<?php simplecolor_post_thumbnail(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -19,14 +19,14 @@
 			the_title( '<h2 class="post-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 		?>
-		<?php brisko_before_entry_meta(); ?>
+		<?php simplecolor_before_entry_meta(); ?>
 			<div class="entry-meta ">
 				<?php
-				brisko_posted_on();
-				brisko_posted_by();
+				simplecolor_posted_on();
+				simplecolor_posted_by();
 				?>
 			</div><!-- .entry-meta -->
-		<?php brisko_after_entry_meta(); ?>
+		<?php simplecolor_after_entry_meta(); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php
@@ -35,7 +35,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'brisko' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'simplecolor' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -47,22 +47,22 @@
 		);
 		?>
 			<footer class="entry-footer ">
-				<?php brisko_entry_footer(); ?>
+				<?php simplecolor_entry_footer(); ?>
 			</footer><!-- .entry-footer -->
 	<?php
 	else :
 		the_excerpt();
 		?>
 		<div class="read-more ">
-			<a class="more-link <?php echo esc_html( Brisko\Theme::options()->button_border_radius() ); ?>" href="<?php echo esc_url( get_permalink() ); ?>">
-			<?php echo esc_html__( 'Read More', 'brisko' ); ?>
+			<a class="more-link <?php echo esc_html( Simplecolor\Theme::options()->button_border_radius() ); ?>" href="<?php echo esc_url( get_permalink() ); ?>">
+			<?php echo esc_html__( 'Read More', 'simplecolor' ); ?>
 		</a>
 	</div>
 	<?php
 	endif;
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'brisko' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'simplecolor' ),
 				'after'  => '</div>',
 			)
 		);

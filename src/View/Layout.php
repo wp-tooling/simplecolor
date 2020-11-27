@@ -1,8 +1,8 @@
 <?php
 
-namespace Brisko\View;
+namespace Simplecolor\View;
 
-use Brisko\Theme;
+use Simplecolor\Theme;
 
 abstract class Layout
 {
