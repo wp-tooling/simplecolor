@@ -1,16 +1,16 @@
 === Simplecolor ===
-Contributors: icelayer
+Contributors: wp-tooling
 Tested up to: 5.5
-Version: 0.7.4
+Version: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 == Description ==
 
-Simplecolor is a beautifully simple and lightweight WordPress theme that is optimized for speed and WordPress page builders like Elementor, you can use it as a foundation to build versatile layouts using Elementor Template Kits or the WordPress Block Patterns. This theme is suitable for personal blogs, business, agency, restaurant, simple blog, life coach, portfolio, charity, and more. Simplecolor can be extended with plugins or child themes using any of the many included actions, the color scheme can be easily customized to match Elementor Template Kits. The options are easy to manage using the live theme customizer.  Use the WordPress Customizer and Elementor page builder to create professional designs on a solid foundation. Check out our prebuilt website demos for inspiration. demo.wpsimplecolor.com
+Simplecolor is a beautifully simple and lightweight WordPress theme based on Brisko theme https://github.com/devuri/brisko.
 
-For more information about the Simplecolor Theme please go to https://wpsimplecolor.com.
+For more information about the Simplecolor Theme please go to https://github.com/wp-tooling/simplecolor.
 
 == Installation ==
 
@@ -21,7 +21,7 @@ For more information about the Simplecolor Theme please go to https://wpsimpleco
 
 == Copyright ==
 
-Simplecolor WordPress Theme, Copyright 2020 Uriel Wilson.
+Simplecolor WordPress Theme, Copyright 2020 wp-tooling.
 Simplecolor is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
@@ -131,8 +131,5 @@ Source: https://github.com/gblazex/smoothscroll-for-websites
 * Add Post width Full Page setting
 * Add Read More Button setting
 
-= 0.7.4 =
-* Fix Display Post Tags
-* Fix Display Previous and Next Post Navigation
-* Fix Display Post Categories
-* Add Display Page Header
+= 2.0.0 =
+* Rollback to original orange color.

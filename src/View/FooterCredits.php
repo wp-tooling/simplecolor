@@ -55,7 +55,7 @@ class FooterCredits
 		if ( get_theme_mod( 'poweredby' ) !== false ) {
 			$poweredby = '<span class="simplecolor-footer-poweredby">' . wp_kses_post( get_theme_mod( 'poweredby' ) ) . '</span>';
 		} else {
-			$poweredby = ' | Powered by <a href="https://wpsimplecolor.com">Simplecolor WordPress Theme</a>';
+			$poweredby = ' | Powered by Simplecolor WordPress Theme';
 		}
 		return $poweredby;
 	}

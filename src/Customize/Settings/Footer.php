@@ -57,7 +57,7 @@ class Footer
 		// Powered By.
 		$wp_customize->add_setting(
 			'poweredby', array(
-				'default'           => wp_kses_post( ' | Powered by <a href="https://wpsimplecolor.com">Simplecolor WordPress Theme</a>' ),
+				'default'           => wp_kses_post( ' | Powered by Simplecolor WordPress Theme' ),
 				'capability'        => 'edit_theme_options',
 				'transport'         => self::$transport,
 				'sanitize_callback' => 'wp_kses_post',

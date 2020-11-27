@@ -1,22 +1,18 @@
-> **Note:** This is the development version and contains features that may be in various stages of development. If you want to use this on a live website download here: [Simplecolor](https://wordpress.org/themes/simplecolor/).
-
-
 #  Simplecolor WordPress Theme
+Simplecolor is a beautifully simple and lightweight WordPress theme based on Brisko theme https://github.com/devuri/brisko.
 
-Simplecolor is a beautifully simple and lightweight WordPress theme that is optimized for speed and WordPress page builders like Elementor, you can use it as a foundation to build versatile layouts using Elementor Template Kits or the WordPress Block Patterns. This theme is suitable for personal blogs, business, agency, restaurant, simple blog, life coach, portfolio, charity, and more. Simplecolor can be extended with plugins or child themes using any of the many included actions, the color scheme can be easily customized to match Elementor Template Kits. The options are easy to manage using the live theme customizer.  Use the WordPress Customizer and Elementor page builder to create professional designs on a solid foundation. Check out our prebuilt website demos for inspiration. demo.wpsimplecolor.com
-
-For more information about the Simplecolor Theme please go to https://wpsimplecolor.com
+For more information about the Simplecolor Theme please go to https://github.com/wp-tooling/simplecolor.
 
 ![screenshot](https://user-images.githubusercontent.com/4777400/85940125-27509900-b8e0-11ea-8dfa-aaeca9fcdcfc.png)
 
 #### GPL-2.0 License
-Simplecolor WordPress Theme, Copyright 2020 Uriel Wilson.
+Simplecolor WordPress Theme, Copyright 2020 wp-tooling, based on Uriel Wilson's Brisko theme.
 
 Simplecolor is distributed under the terms of the GNU GPL.
 
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
-This template is 100% FREE you are not required to **keep the footer attribution link**, but it would be nice if you did.
+This template is 100% FREE.
 
 
 #### Credits
